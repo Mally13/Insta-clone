@@ -1076,7 +1076,7 @@ a.post-card-location{
     text-overflow: ellipsis;
     white-space: nowrap;
     font-weight: var(--font-weight-system-regular);
-    color: rgb(var(--ig-secondary-text));
+    color: rgb(var(--ig-primary-text));
     font-size: var(--system-12-font-size);
     line-height: var(--system-12-line-height);
     margin: 0;
