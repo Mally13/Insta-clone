@@ -718,12 +718,13 @@ a, a:visited {
     vertical-align: baseline;
 }
 .avatar span{
-    background-color: rgb(var(--ig-secondary-background));
+    background-color: rgb(var(--ig-primary-background));
+    border-radius: 50%;
 }
 
 .no-story-avatar{
     border-radius: 50%;
-    border:1px solid rgba(var(--web-always-black));
+    border:1px solid rgba(var(--ig-highlight-background));
 }
 .round-image{
     border-radius: 50%;
@@ -927,6 +928,7 @@ a, a:visited {
     width: 56px;
     height: 56px;
 }
+
 span.story-bg{
     background-color: rgb(var(--ig-secondary-background));
     border-bottom-left-radius: 50%;
@@ -1123,6 +1125,217 @@ a.post-card-location{
     position: relative;
 }
 
+
+
+.aside-header{
+    height: 66px;
+    margin-bottom: 10px;
+    margin-top: 16px;
+}
+.aside-header-wrapper{
+    width: 100%;
+    margin-right: var(--base-unit);
+    flex: 0 0 auto;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: stretch;
+    display: flex;
+}
+a.account-avatar{
+    height: 56px;
+    width: 56px;
+    margin-bottom: 10px;
+    margin-top: 16px;
+    margin-right: calc(var(--base-unit) * 3);
+    flex: 0 0 auto;
+    flex-direction: column;
+    align-items: stretch;
+    display: flex;
+    align-content: stretch;
+} 
+.account-user-display-name{
+    justify-content: center;
+    flex-direction: column;
+    flex: 1 1 auto;
+    min-height: 0;
+    min-width: 0;
+    display: flex;    
+}
+a.account-name{
+    color: rgb(var(--ig-primary-text));
+    font-weight: var(--font-weight-system-semibold);
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+.display-name{
+    /* margin-top: calc(var(--base-unit) * 2); */
+    flex: 0 0 auto;
+    justify-content: flex-start;
+    flex-direction: column;
+    display: flex;
+    font-size: var(--system-14-font-size);
+    line-height: var(--system-14-line-height);
+    margin:3px 0 -4px;
+    font-weight: var(--font-weight-system-regular);
+    color: rgb(var(--ig-secondary-text));
+}
+.aside-header-cta{
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    align-content: stretch;
+    display: flex;
+}
+a.asides-cta{
+    color: rgb(var(--ig-primary-button));
+    font-weight: var(--font-weight-system-semibold);
+    font-size: var(--system-12-font-size);
+    line-height: var(--system-12-line-height);
+    margin: -2px 0 -3px;
+    font-family: var(--font-family-system);
+}
+.suggestions{
+    background-color: rgb(var(--ig-secondary-background));
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 12px -16px;
+    width: calc(100% + 32px);
+}
+.suggestions-header{
+    padding-bottom: var(--base-unit);
+    padding-top: var(--base-unit);
+    padding-left: calc(var(--base-unit) * 4);
+    padding-right: calc(var(--base-unit) * 4);
+    flex: 0 0 auto;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-content: stretch;
+    align-items: stretch;
+    display: flex;
+}
+.insta-header{
+    flex: 1 1 auto;
+    font-size: var(--system-14-font-size);
+    line-height: var(--system-14-line-height);
+    margin: -3px 0 -4px;
+    font-weight: var(--font-weight-system-semibold);
+    color: rgb(var(--ig-secondary-text));
+    font-family: var(--font-family-system);
+}
+.insta-header-cta{
+    color: rgb(var(--ig-secondary-button));
+    border: 0;
+    display: inline-block;
+    padding: 0!important;
+    position: relative;
+    font-size: var(--system-12-font-size);
+    line-height: var(--system-12-line-height);
+    margin: -2px 0 -3px;
+    font-weight: var(--font-weight-system-semibold);
+    color: rgb(var(--ig-primary-text));
+}
+.suggestions-body{
+    margin-left: var(--base-unit);
+    margin-bottom: var(--base-unit);
+    flex: 0 0 auto;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: stretch;
+    align-content: stretch;
+    display: flex;
+}
+.suggestions-body-wrapper{
+    padding-bottom: calc(var(--base-unit) * 2);
+    padding-top: calc(var(--base-unit) * 2);
+    flex: 0 0 auto;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: stretch;
+    align-content: stretch;
+    display: flex;
+    background-color: rgb(var(--ig-secondary-background));
+    height: auto;
+    overflow: hidden auto;
+}
+.suggestion{
+    padding-bottom: calc(var(--base-unit) * 2);
+    padding-top: calc(var(--base-unit) * 2);
+    padding-left: calc(var(--base-unit) * 4);
+    padding-right: calc(var(--base-unit) * 4);
+    flex: 0 0 auto;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    display: flex;
+    flex-direction: row;
+}
+.suggestion span{
+    width: 32px;
+    height: 32px;
+    margin-right: calc(var(--base-unit) * 3);
+}
+.suggestion .account-name{
+    font-weight: var(--font-weight-system-semibold);
+    font-size: var(--system-14-font-size);
+    line-height: var(--system-14-line-height);
+}
+.suggestion .display-name{
+    font-size: var(--system-12-font-size);
+    line-height: var(--system-12-line-height);
+    margin: -2px 0 -3px;
+}
+
+.aside-footer-wrapper{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 38px 0;
+}
+nav.footer-links{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+ul.foo{
+    margin-right: 0;
+    border: 0;
+    flex-grow: 1;
+    font: inherit;
+    font-size: 100%;
+    margin: 0;
+    margin-bottom: 3px;
+    padding: 0;
+    vertical-align: baseline;
+}
+.footer-li, .footer-li-la{
+    margin: 0;
+    border: 0;
+    display: inline-block;
+    font: inherit;
+    padding: 0;
+    vertical-align: baseline;
+}
+a.footer-a::after{
+    content: '\00B7';
+    margin: 0 0.25em 0 0.25em;
+}
+a.footer-a,.footer-a{
+    color: rgb(var(--ig-tertiary-text));
+    font-size: var(--system-12-font-size);
+    font-weight: var(--font-weight-system-regular);
+    text-transform: none;
+    cursor: pointer;
+}
+a.footer-a span, .footer-a span{
+    display: inline!important;
+    margin: 0!important;
+    color: rgb(var(--ig-tertiary-text));
+    font-weight: var(--font-weight-system-regular);
+    font-size: var(--system-12-font-size);
+    line-height: var(--system-12-line-height);    
+    font-family: var(--font-family-system);
+
+}
 
 
 
