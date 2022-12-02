@@ -776,7 +776,7 @@ a, a:visited {
 .centered-content aside{
     left: 863px;
     position: sticky;
-    top: calc(30px + var(--desktop-nav-height));
+    top: calc(10px + var(--desktop-nav-height));
     height: 100vh;
     margin-bottom: 30px;
     padding: 0;
