@@ -924,6 +924,10 @@ a, a:visited {
     width: 64px;
 }
 .story span{
+    width: 56px;
+    height: 56px;
+}
+span.story-bg{
     background-color: rgb(var(--ig-secondary-background));
     border-bottom-left-radius: 50%;
     border-top-right-radius: 50%;
@@ -935,8 +939,6 @@ a, a:visited {
     border-left: 2px solid var(--gradient-lavender);
     margin-bottom: 8px;
     margin-top: 4px;
-    width: 56px;
-    height: 56px;
 }
 img.round-image.story-image{
     width: 52px;
@@ -971,8 +973,158 @@ img.round-image.story-image{
 }
 
 
-.post-card{
+.post-cards{
     margin-top: calc(var(--base-unit) * 4);
+    flex: 0 0 auto;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: stretch;
+    align-content: stretch;
+    display: flex;
+    position: relative;
 }
+.post-cards-wrapper{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 6400px;
+    padding-top: 0px;
+}
+.post-card{
+    border-radius: 8px;
+    background-color: rgb(var(--ig-primary-background));
+    border: 1px solid rgb(var(--ig-elevated-separator));
+    border-radius: 3px;
+    margin-left: -1px;
+    margin-right: -1px;
+    margin-bottom: 12px;
+}
+.post-card-wrapper{
+    max-height: inherit;
+    max-width: inherit;
+    flex: 0 0 auto;
+    justify-content: center;
+    flex-direction: column;
+    align-items: stretch;
+    align-content: stretch;
+    display: flex;
+    position: relative
+}
+.post-card-header{
+    border-bottom-width: 0.5px;
+    background-color: rgb(var(--ig-primary-background));
+    border-radius: 8px;
+    border-bottom: 1px solid rgb(var(--post-separator));
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex: 0 0 auto;
+    display: flex;
+}
+.post-card-avatar-username{
+    margin: 8px 4px 8px 12px;
+    padding: unset;
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-shrink: 1;
+    max-width: calc(100% - 48px);
+    position: relative;
+}
+.post-card-avatar-username span{
+    width: 32px;
+    height: 32px;
+}
+.post-card-avatar-image{
+    width: 28px;
+    height: 28px;
+}
+.post-card-username-location{
+    justify-content: center;
+    margin-left: 10px;
+    min-height: 40px;
+    align-items: flex-start;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 1;
+    overflow: hidden;
+    position: relative;
+}
+a.post-card-username{
+    border: 0;
+    color: rgb(var(--ig-secondary-button));
+    display: inline-block;
+    padding: 0!important;
+    position: relative;
+    background-color: transparent;
+    display: inline;
+    font-family: var(--font-family-system);
+    font-size: 14px;
+    font-weight: var(--font-weight-system-semibold);
+    pointer-events: auto;
+    text-align: center;
+    text-overflow: ellipsis;
+    text-transform: inherit;
+}
+a.post-card-location{
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: var(--font-weight-system-regular);
+    color: rgb(var(--ig-secondary-text));
+    font-size: var(--system-12-font-size);
+    line-height: var(--system-12-line-height);
+    margin: 0;
+}
+.post-card-more-btn{
+    justify-content: center;
+    padding-right: 4px;
+}
+.more-btn{
+    align-items: center;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+}
+.post-card-body{
+    background-color: rgb(var(--ig-primary-background));
+    display: flex;
+    flex-direction: column;
+    pointer-events: auto;
+    position: relative;
+}
+.post-card-carousel{
+    align-items: stretch;
+    border: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    font: inherit;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    touch-action: manipulation;
+    vertical-align: baseline;
+}
+.post-card-img-video-wrapper{
+    background-color: rgb(var(--ig-highlight-background));
+    display: block;
+    width: 100%;
+    position: relative;
+}
+
+
+
+
 
 
