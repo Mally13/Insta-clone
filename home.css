@@ -1289,7 +1289,6 @@ a.asides-cta{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 38px 0;
 }
 nav.footer-links{
     display: flex;
