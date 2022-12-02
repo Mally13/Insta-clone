@@ -1336,6 +1336,19 @@ a.footer-a span, .footer-a span{
     font-family: var(--font-family-system);
 
 }
+.copyright{
+    text-transform: uppercase;
+}
+.copyright-wrapper{
+    color: rgb(var(--ig-tertiary-text));
+    font-size: var(--system-12-font-size);
+    font-weight: var(--font-weight-system-regular);
+    border: 0;
+    font-family: var(--font-family-system);
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
 
 
 
