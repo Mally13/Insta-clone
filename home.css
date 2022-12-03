@@ -1076,12 +1076,12 @@ img.round-image.story-image{
     position: relative;
 }
 .post-card-avatar-username span{
-    width: 32px;
-    height: 32px;
+    width: 36px;
+    height: 36px;
 }
 .post-card-avatar-image{
-    width: 28px;
-    height: 28px;
+    width: 32px;
+    height: 32px;
 }
 .post-card-username-location{
     justify-content: center;
