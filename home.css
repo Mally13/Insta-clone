@@ -1523,8 +1523,46 @@ a.footer-a span, .footer-a span{
     font-weight: var(--font-weight-system-semibold);
     color: rgb(var(--ig-primary-text));
 }
+.caption{
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-bottom: 8px;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: stretch;
+    align-content: stretch;
+    display: flex;
+}
+.caption-username{
+    font-weight: var(--font-weight-system-semibold);
+    color: rgb(var(--ig-primary-text));
+    padding-right: 6px;
+}
+details > summary {
+    background-color:transparent;
+    border: none;
+    cursor: pointer;
+    list-style: none;
+  }
+  
+  details > p {
+    background-color: transparent;
+    margin: 0;
+  }
 
+.view-all{
+    color: rgb(var(--ig-secondary-text));
+    font-weight: var(--font-weight-system-regular);
+    font-size: var(--system-14-font-size);
+    line-height: var(--system-14-line-height);
+}
+a.time-link{
+    color: rgb(var(--ig-secondary-text));
+    font-weight: var(--font-weight-system-regular);
+    font-size: var(--system-10-font-size);
+    line-height: var(--system-10-line-height);
 
+}
 
 
 
