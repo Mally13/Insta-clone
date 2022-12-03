@@ -1468,7 +1468,7 @@ a.footer-a span, .footer-a span{
     align-items: flex-start;
     align-content: stretch;
 }
-.liked-by-link-avatars{
+.liked-by-link{
     display: block;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -1481,6 +1481,49 @@ a.footer-a span, .footer-a span{
     font-family: var(--font-family-system);
 
 }
+.liked-by-link-avatars{
+    flex: 0 0 auto;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+    align-content: stretch;
+        display: flex;
+}
+.overlap{
+    margin-left: -8px;
+}
+.liked-by-usernames{
+    flex: 1 1 auto;
+    min-height: 0;
+    min-width: 0;
+    flex-wrap: wrap;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    display: flex;
+    align-items: stretch;
+    align-content: stretch;
+    flex-direction: column;
+}
+.liked-by-usernames-wrapper{
+    display: flex;
+    color: rgb(var(--ig-primary-text));
+    font-weight: var(--font-weight-system-regular);
+    font-size: var(--system-14-font-size);
+    line-height: var(--system-14-line-height);
+    font-family: var(--font-family-system);
+}
+
+.highlighted-user{
+    padding-left: 3px;
+    padding-right: 3px;
+}
+.liked-by-usernames a{
+    font-weight: var(--font-weight-system-semibold);
+    color: rgb(var(--ig-primary-text));
+}
+
 
 
 
