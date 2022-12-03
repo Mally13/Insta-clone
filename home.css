@@ -1041,7 +1041,7 @@ img.round-image.story-image{
     margin-right: -1px;
     margin-bottom: 12px;
 }
-.post-card-wrapper{
+.single-post-card-wrapper{
     max-height: inherit;
     max-width: inherit;
     flex: 0 0 auto;
@@ -1550,6 +1550,7 @@ details > summary {
     border: none;
     cursor: pointer;
     list-style: none;
+    overflow-x: hidden;
   }
   
   details > p {
@@ -1638,4 +1639,6 @@ a.time-link{
     font-size: .875rem;
 }
 
-
+time{
+    text-transform: uppercase;
+}
