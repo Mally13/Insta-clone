@@ -1166,6 +1166,10 @@ a.post-card-location{
     display: none;
 }
 
+/* .tool-button-normal-1.liked svg{
+    fill: var(--fds-red-55);
+    color:var(--fds-red-55) ;
+} */
 .tool-button-normal-1:hover svg,.tool-button-normal-2:hover svg,.tool-button-normal-3:hover svg,.tool-button-normal-4:hover svg{
  fill: #8e8e8e;
  color:#8e8e8e ;
