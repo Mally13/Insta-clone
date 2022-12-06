@@ -1087,6 +1087,25 @@ img.round-image.story-image{
     width: 32px;
     height: 32px;
 }
+.comments{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+a.mention{
+    color: rgb(var(--ig-link));
+}
+a.comment-username{
+    font-weight: var(--font-weight-system-semibold);
+    font-size: var(--system-14-font-size);
+    line-height: var(--system-14-line-height);
+    color: rgb(var(--ig-primary-text));
+    margin-right: 8px;
+}
+.single-comment{
+    display: flex;
+    flex-direction: row;
+}
 .post-card-username-location{
     justify-content: center;
     margin-left: 10px;
@@ -1139,6 +1158,14 @@ a.post-card-location{
     display: flex;
     justify-content: center;
     padding: 8px;
+}
+.tool-button-hover{
+    display: none;
+}
+
+.tool-button-normal-1:hover svg,.tool-button-normal-2:hover svg,.tool-button-normal-3:hover svg,.tool-button-normal-4:hover svg{
+ fill: #8e8e8e;
+ color:#8e8e8e ;
 }
 .post-card-body{
     background-color: rgb(var(--ig-primary-background));
@@ -1454,9 +1481,7 @@ a.footer-a span, .footer-a span{
     padding: 0;
     vertical-align: baseline;
 }
-.tool-button-hover{
-    display: none;
-}
+
 
 .liked-by{
     padding-left: 12px;
