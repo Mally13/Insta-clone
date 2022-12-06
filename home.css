@@ -1174,6 +1174,9 @@ a.post-card-location{
  fill: #8e8e8e;
  color:#8e8e8e ;
 }
+a.post-card-username:hover{
+    opacity: .5;
+}
 .post-card-body{
     background-color: rgb(var(--ig-primary-background));
     display: flex;
