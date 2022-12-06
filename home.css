@@ -944,8 +944,11 @@ a, a:visited {
     width: 64px;
 }
 .story span{
-    width: 56px;
-    height: 56px;
+    display: flex;
+    width: 58px;
+    height: 58px;
+    align-items: center;
+    justify-content: center;
 }
 
 span.story-bg{
